@@ -1,8 +1,10 @@
 sudo: false
 language: node_js
+dist: focal
 node_js: 8
 
-cache: yarn
+cache: npm
+install: npm install
 script: npm run test:travis
 
 env:
